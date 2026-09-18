@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CasaForte | Tudo para sua obra — Ferramentas, Materiais, Elétrica e Hidráulica</title>
+<meta name="description" content="CasaForte: ferramentas, materiais de construção, elétrica, hidráulica, pintura e jardinagem. Frete grátis acima de R$299, entrega rápida e parcelamento em até 12x.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container header-top">
+    <a class="brand" href="#" aria-label="CasaForte — página inicial">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm4 9h-2V9h2v3z"/></svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Casa<em>Forte</em></span>
+        <span class="brand-tagline">Tudo para sua obra</span>
+      </span>
+    </a>
+
+    <div class="header-search">
+      <form class="search-field" role="search" action="#" onsubmit="return false;">
+        <label class="visually-hidden" for="site-search">Buscar produtos</label>
+        <input id="site-search" type="text" placeholder="O que você está procurando?" autocomplete="off">
+        <button type="submit" aria-label="Buscar">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="header-actions">
+      <a class="header-icon-btn account-link" href="#conta">
+        <span class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </span>
+        <span class="icon-label">
+          <span class="label-top">Minha conta</span>
+          <span class="label-bottom">Entrar ou cadastrar</span>
+        </span>
+      </a>
+
+      <a class="header-icon-btn" href="#carrinho">
+        <span class="icon-bubble">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </span>
+        <span class="icon-label">
+          <span class="label-top">Carrinho</span>
+          <span class="label-bottom"><span id="cart-count-text">0 itens</span></span>
+        </span>
+      </a>
+
+      <button class="icon-only-btn" id="mobile-search-toggle" type="button" aria-label="Abrir busca" aria-expanded="false" aria-controls="mobile-search-panel">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="container mobile-search-panel" id="mobile-search-panel">
+    <form class="search-field" role="search" action="#" onsubmit="return false;">
+      <label class="visually-hidden" for="site-search-mobile">Buscar produtos</label>
+      <input id="site-search-mobile" type="text" placeholder="O que você está procurando?" autocomplete="off">
+      <button type="submit" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+    </form>
+  </div>
+
+  <nav class="main-nav" aria-label="Categorias principais">
+    <div class="container nav-inner">
+      <button class="nav-toggle-all" type="button">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <span>Todas as categorias</span>
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#inicio" class="is-active">Início</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+        <li><a href="#materiais">Materiais de Construção</a></li>
+        <li><a href="#eletrica">Elétrica</a></li>
+        <li><a href="#hidraulica">Hidráulica</a></li>
+        <li><a href="#pintura">Pintura</a></li>
+        <li><a href="#jardinagem">Jardinagem</a></li>
+        <li><a href="#produtos" class="is-highlight">Ofertas 🔥</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobile-drawer">
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+  <div class="mobile-drawer-panel" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <div class="mobile-drawer-head">
+      <span class="brand-name" style="color:#fff;">Casa<em style="color:#F5B400;font-style:normal;">Forte</em></span>
+      <button class="mobile-drawer-close" id="mobile-drawer-close" type="button" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#ferramentas">Ferramentas</a></li>
+      <li><a href="#materiais">Materiais de Construção</a></li>
+      <li><a href="#eletrica">Elétrica</a></li>
+      <li><a href="#hidraulica">Hidráulica</a></li>
+      <li><a href="#pintura">Pintura</a></li>
+      <li><a href="#jardinagem">Jardinagem</a></li>
+      <li><a href="#produtos" class="is-highlight">Ofertas 🔥</a></li>
+    </ul>
+    <div class="mobile-drawer-account">
+      <a href="#conta">Entrar ou cadastrar</a>
+      <a href="#carrinho">Ver carrinho</a>
+    </div>
+  </div>
+</div>
+
+<main id="conteudo">
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-media">
+      <img
+        src="https://images.pexels.com/photos/1029243/pexels-photo-1029243.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Bancada de madeira com capacete, trena, martelo, chave inglesa e óculos de proteção"
+        width="1600" height="1067">
+    </div>
+    <div class="container hero-content">
+      <span class="eyebrow">Qualidade e variedade</span>
+      <h1 class="hero-title">Tudo para sua obra em um só lugar</h1>
+      <p class="hero-text">Ferramentas, materiais de construção, elétrica, hidráulica, pintura e muito mais com preços e prazos garantidos para a sua reforma.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#produtos">
+          <span>Ver ofertas</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a class="btn btn-outline" href="#categorias">Explorar Departamentos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST BAR ===================== -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </span>
+        <span><h3>Frete Grátis</h3><p>Em compras acima de R$ 299</p></span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">
+          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </span>
+        <span><h3>Entrega Expressa</h3><p>Direto no canteiro da sua obra</p></span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        </span>
+        <span><h3>Compra Segura</h3><p>Garantia total de fábrica</p></span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+        </span>
+        <span><h3>Até 12x Sem Juros</h3><p>Ou 5% de desconto no Pix</p></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES ===================== -->
+  <section class="section categories" id="categorias">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Navegação rápida</span>
+          <h2 class="section-title">Categorias em destaque</h2>
+        </div>
+      </div>
+      <div class="category-scroller">
+        <a class="category-card" href="#ferramentas">
+          <span class="category-thumb">
+            <img src="https://images.pexels.com/photos/5846253/pexels-photo-5846253.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ferramentas manuais e elétricas sobre bancada de trabalho" width="400" height="400" loading="lazy">
+          </span>
+          <span>Ferramentas <span class="arrow">→</span></span>
+        </a>
+        <a class="category-card" href="#materiais">
+          <span class="category-thumb">
+            <img src="https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Parede de tijolos cerâmicos vermelhos" width="400" height="400" loading="lazy">
+          </span>
+          <span>Materiais <span class="arrow">→</span></span>
+        </a>
+        <a class="category-card" href="#eletrica">
+          <span class="category-thumb">
+            <img src="https://images.pexels.com/photos/4480525/pexels-photo-4480525.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Fios e cabos elétricos coloridos" width="400" height="400" loading="lazy">
+          </span>
+          <span>Elétrica <span class="arrow">→</span></span>
+        </a>
+        <a class="category-card" href="#hidraulica">
+          <span class="category-thumb">
+            <img src="https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instalação de conexões hidráulicas" width="400" height="400" loading="lazy">
+          </span>
+          <span>Hidráulica <span class="arrow">→</span></span>
+        </a>
+        <a class="category-card" href="#pintura">
+          <span class="category-thumb">
+            <img src="https://images.pexels.com/photos/2293819/pexels-photo-2293819.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lata de tinta com rolos e bandeja de pintura" width="400" height="400" loading="lazy">
+          </span>
+          <span>Pintura <span class="arrow">→</span></span>
+        </a>
+        <a class="category-card" href="#jardinagem">
+          <span class="category-thumb">
+            <img src="https://images.pexels.com/photos/7728714/pexels-photo-7728714.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pessoa usando pá em terra de jardim" width="400" height="400" loading="lazy">
+          </span>
+          <span>Jardinagem <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="section products" id="produtos">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Produtos em destaque</h2>
+          <p class="section-sub">Itens mais vendidos com garantia e entrega rápida</p>
+        </div>
+        <a class="section-link" href="#produtos">Ver todos <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="product-scroller">
+        <!-- Produto 1 -->
+        <article class="product-card" data-name="Parafusadeira/Furadeira 12V" data-price="349.90">
+          <div>
+            <div class="product-thumb">
+              <img src="https://images.pexels.com/photos/6790105/pexels-photo-6790105.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Parafusadeira/furadeira 12V em uso sobre madeira" width="500" height="500" loading="lazy">
+            </div>
+            <h3>Parafusadeira/Furadeira 12V</h3>
+            <div class="stars" aria-label="5 de 5 estrelas, 128 avaliações">
+              <span>★★★★★</span><span class="count">(128)</span>
+            </div>
+            <div class="price-block">
+              <span class="price">R$ 349,90</span>
+              <p class="price-note">em até 10x sem juros</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm add-to-cart" type="button">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="product-card" data-name="Tijolo Cerâmico 6 Furos" data-price="1.20">
+          <div>
+            <div class="product-thumb">
+              <img src="https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Tijolo cerâmico de 6 furos" width="500" height="500" loading="lazy">
+            </div>
+            <h3>Tijolo Cerâmico 6 Furos</h3>
+            <div class="stars" aria-label="5 de 5 estrelas, 96 avaliações">
+              <span>★★★★★</span><span class="count">(96)</span>
+            </div>
+            <div class="price-block">
+              <span class="price">R$ 1,20</span> <span class="price-note" style="display:inline;">(unidade)</span>
+              <p class="price-note">Palete com 500 un.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm add-to-cart" type="button">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="product-card" data-name="Tinta Acrílica Rende Muito 18L" data-price="289.90">
+          <div>
+            <div class="product-thumb">
+              <img src="https://images.pexels.com/photos/2293819/pexels-photo-2293819.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Lata de tinta acrílica 18L com rolo de pintura" width="500" height="500" loading="lazy">
+            </div>
+            <h3>Tinta Acrílica Rende Muito 18L</h3>
+            <div class="stars" aria-label="4 de 5 estrelas, 74 avaliações">
+              <span>★★★★</span><span class="muted">★</span><span class="count">(74)</span>
+            </div>
+            <div class="price-block">
+              <span class="price">R$ 289,90</span>
+              <p class="price-note">em até 8x sem juros</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm add-to-cart" type="button">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="product-card" data-name="Joelho PVC 90° 25mm" data-price="2.50">
+          <div>
+            <div class="product-thumb">
+              <img src="https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Conexão de tubo PVC sendo instalada" width="500" height="500" loading="lazy">
+            </div>
+            <h3>Joelho PVC 90° 25mm</h3>
+            <div class="stars" aria-label="5 de 5 estrelas, 42 avaliações">
+              <span>★★★★★</span><span class="count">(42)</span>
+            </div>
+            <div class="price-block">
+              <span class="price">R$ 2,50</span> <span class="price-note" style="display:inline;">(unidade)</span>
+              <p class="price-note">Soldável classe 15</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm add-to-cart" type="button">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </article>
+
+        <!-- Produto 5 -->
+        <article class="product-card" data-name="Caixa de Ferramentas 18 polegadas" data-price="89.90">
+          <div>
+            <div class="product-thumb">
+              <img src="https://images.pexels.com/photos/8985454/pexels-photo-8985454.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Caixa de ferramentas aberta com chaves e alicates" width="500" height="500" loading="lazy">
+            </div>
+            <h3>Caixa de Ferramentas 18"</h3>
+            <div class="stars" aria-label="5 de 5 estrelas, 63 avaliações">
+              <span>★★★★★</span><span class="count">(63)</span>
+            </div>
+            <div class="price-block">
+              <span class="price">R$ 89,90</span>
+              <p class="price-note">Com trava metálica</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm add-to-cart" type="button">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </article>
+
+        <!-- Produto 6 -->
+        <article class="product-card" data-name="Carrinho de Mão 65L" data-price="229.90">
+          <div>
+            <div class="product-thumb">
+              <img src="https://images.pexels.com/photos/26827231/pexels-photo-26827231.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Carrinho de mão reforçado com pneu" width="500" height="500" loading="lazy">
+            </div>
+            <h3>Carrinho de Mão 65L</h3>
+            <div class="stars" aria-label="4 de 5 estrelas, 57 avaliações">
+              <span>★★★★</span><span class="muted">★</span><span class="count">(57)</span>
+            </div>
+            <div class="price-block">
+              <span class="price">R$ 229,90</span>
+              <p class="price-note">Chapa reforçada c/ pneu</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm add-to-cart" type="button">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Adicionar ao carrinho</span>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROMO BANNER ===================== -->
+  <section class="section promo">
+    <div class="container">
+      <div class="promo-card">
+        <div class="promo-inner">
+          <div>
+            <span class="promo-tag">Campanha especial eletricista</span>
+            <h3>Até 30% OFF em toda a linha de Materiais Elétricos e Iluminação</h3>
+            <p>Fios e cabos antichama homologados pelo INMETRO, quadros de distribuição, disjuntores e luminárias LED com preços especiais para profissionais cadastrados.</p>
+          </div>
+          <a class="btn btn-primary" href="#eletrica">
+            <span>Aproveitar Desconto</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="section why-us">
+    <div class="container">
+      <div class="why-us-head">
+        <span class="eyebrow">Diferenciais CasaForte</span>
+        <h2>Por que construir com a CasaForte?</h2>
+        <p>Mais tranquilidade e economia real do início ao acabamento da sua obra.</p>
+      </div>
+      <div class="why-us-grid">
+        <div class="why-us-card">
+          <span class="why-us-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </span>
+          <h3>Variedade Imbatível</h3>
+          <p>Mais de 25.000 itens a pronta entrega para qualquer etapa da sua construção civil ou reforma residencial.</p>
+        </div>
+        <div class="why-us-card">
+          <span class="why-us-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </span>
+          <h3>Marcas Líderes</h3>
+          <p>Trabalhamos estritamente com fornecedores e indústrias certificadas com garantia comprovada de procedência.</p>
+        </div>
+        <div class="why-us-card">
+          <span class="why-us-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </span>
+          <h3>Atendimento Técnico</h3>
+          <p>Consultores capacitados para dimensionar listas de quantitativos e indicar soluções adequadas ao seu projeto.</p>
+        </div>
+        <div class="why-us-card">
+          <span class="why-us-icon">
+            <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </span>
+          <h3>Logística Dedicada</h3>
+          <p>Frota própria com caminhões munck e veículos ágeis para descarregar diretamente no seu canteiro de obras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="testimonials-head">
+        <h2>O que dizem os mestres de obras e construtores</h2>
+        <p>Confira os relatos de quem confia na CasaForte todos os dias</p>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p class="quote">"Na construção civil, atraso de material é prejuízo na certa. A CasaForte entrega o cimento e as ferragens sempre no horário combinado. Parceria de anos!"</p>
+          </div>
+          <div class="testimonial-person">
+            <span class="testimonial-avatar">CM</span>
+            <div>
+              <h4>Carlos Mendes</h4>
+              <p>Mestre de Obras • 18 anos de profissão</p>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p class="quote">"Excelente portfólio para a fase hidráulica e elétrica. Os produtos de iluminação têm design moderno e os melhores preços de atacado da região."</p>
+          </div>
+          <div class="testimonial-person">
+            <span class="testimonial-avatar">MS</span>
+            <div>
+              <h4>Mariana Silva</h4>
+              <p>Engenheira Civil • Construtora Silva &amp; Lima</p>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p class="quote">"Estava reformando minha casa e não entendia muito sobre as medidas de conexões. O atendimento pelo WhatsApp tirou todas as dúvidas e economizei bastante."</p>
+          </div>
+          <div class="testimonial-person">
+            <span class="testimonial-avatar">RS</span>
+            <div>
+              <h4>Roberto Santos</h4>
+              <p>Consumidor Final • Reforma Residencial</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <span class="newsletter-badge">⚡ Clube de Descontos CasaForte</span>
+      <h2>Receba ofertas exclusivas e cupons direto no seu e-mail</h2>
+      <p>Cadastre-se para receber cotações personalizadas para grandes lotes, dicas de reforma e novidades em ferramentas.</p>
+      <form class="newsletter-form" id="newsletter-form" novalidate>
+        <div class="newsletter-fields">
+          <label class="visually-hidden" for="newsletter-email">Seu e-mail</label>
+          <input id="newsletter-email" type="email" placeholder="Digite seu melhor e-mail" required>
+          <button class="btn btn-primary" type="submit">Inscrever-se</button>
+        </div>
+        <label class="newsletter-consent">
+          <input type="checkbox" checked required>
+          <span>Concordo em receber comunicações comerciais nos termos da LGPD.</span>
+        </label>
+        <p class="newsletter-feedback" id="newsletter-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a class="brand" href="#" aria-label="CasaForte — página inicial">
+          <span class="brand-mark" style="width:38px;height:38px;">
+            <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm4 9h-2V9h2v3z"/></svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Casa<em>Forte</em></span>
+          </span>
+        </a>
+        <p>Referência completa no fornecimento de materiais brutos, ferramentas manuais e elétricas, equipamentos de segurança e acabamentos para obras residenciais e comerciais.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.6 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Sobre a CasaForte</a></li>
+          <li><a href="#">Nossas Lojas Físicas</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="#">Blog da Construção</a></li>
+          <li><a href="#">Sustentabilidade e Resíduos</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="#">Central de Ajuda (FAQ)</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">Acompanhar Meu Pedido</a></li>
+          <li><a href="#" class="highlight">Televendas Corporativo (B2B)</a></li>
+          <li><a href="#">Fale com Especialista</a></li>
+          <li><span class="whatsapp">WhatsApp: (11) 98765-4321</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pagamento Seguro</h4>
+        <div class="payment-badges">
+          <span>PIX (-5%)</span>
+          <span>Boleto</span>
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>Cartão BNDES</span>
+        </div>
+        <h4 style="font-size:0.75rem;">Certificações</h4>
+        <div class="cert-badges">
+          <span><svg viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg> SSL 256 Bits</span>
+          <span>RA 1000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div>
+        © 2026 CasaForte Materiais para Construção S.A. Todos os direitos reservados.<br>
+        CNPJ: 12.345.678/0001-90 • Av. das Indústrias da Construção, 1500 - São Paulo/SP
+      </div>
+      <div>Imagens ilustrativas. Preços e condições de pagamento válidos exclusivamente para compras no site.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
